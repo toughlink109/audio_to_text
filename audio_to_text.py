@@ -43,7 +43,7 @@ def main():
     gen_srt = input("是否生成字幕文件(.srt)? [y/N]: ").strip().lower() == "y"
 
     print("\n[1/3] 加载 Whisper 模型")
-    model = whisper.load_model("medium")
+    model = whisper.load_model("small")
     # Whisper 可选模型参数（load_model时使用），模型越大越准，但速度越慢、占用显存/内存越高
         # "tiny"       : 最快，精度最低，适合实时或低配机器（~75MB）
         # "base"       : 速度较快，精度一般（~142MB）

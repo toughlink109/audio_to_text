@@ -67,6 +67,20 @@ audio_Output    # 识别结果会输出到这里
    python audio_to_text.py
    ```
 
+## 图像说明
+![](img/输入音频.png)
+<p align="center">输入音频截图</p>
+
+<img src="img/音频处理过程.png" style="zoom: 67%;" />
+
+<p align="center">音频处理过程</p>
+
+<img src="img/识别结果展示.png" style="zoom: 67%;" />
+<p align="center">识别结果展示</p>
+
+
+
+
 
 ## 输出说明
 

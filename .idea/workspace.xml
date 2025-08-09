@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6fdbc66-33d2-4573-871a-dac5ffa79693" name="Changes" comment="添加了license">
+    <list default="true" id="d6fdbc66-33d2-4573-871a-dac5ffa79693" name="Changes" comment="添加了license,Remove audio_Output from git tracking">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_to_text.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ai项目\audio_to_text\audio_to_text\audio_Input" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="audio_to_text" />
@@ -106,12 +113,21 @@
       <option name="project" value="LOCAL" />
       <updated>1754721062349</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加了license,Remove audio_Output from git tracking">
+      <option name="closed" value="true" />
+      <created>1754721639252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1754721639252</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="这是一个基于 Python 和 Whisper 的音频处理工具，能够将多种格式的音频文件转换为文本，并可选择生成字幕文件。工具设计简洁易用，自动处理文件路径，用户只需选择输入文件即可完成转换操作" />
     <MESSAGE value="添加了license" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了license" />
+    <MESSAGE value="添加了license,Remove audio_Output from git tracking" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了license,Remove audio_Output from git tracking" />
   </component>
 </project>
