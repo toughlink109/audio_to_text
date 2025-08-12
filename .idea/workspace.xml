@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6fdbc66-33d2-4573-871a-dac5ffa79693" name="Changes" comment="添加了license,Remove audio_Output from git tracking">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d6fdbc66-33d2-4573-871a-dac5ffa79693" name="Changes" comment="添加了readme文件中的图片说明">
+      <change afterPath="$PROJECT_DIR$/img/GPU检测.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/PyTorch官网支持gpu的torch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/nvidia-smi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/输出文件一览.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/音频处理过程2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testGpu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/audio_to_text.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/audio_to_text.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/audio_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_to_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/音频处理中.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="312ITqsTkiRNB1Eg0cncnR4azlj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -38,9 +46,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.Unnamed.executor": "Run",
     "Python.audio_to_text.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "Python.testGpu.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -121,13 +132,34 @@
       <option name="project" value="LOCAL" />
       <updated>1754721639252</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加了readme文件中的图片说明">
+      <option name="closed" value="true" />
+      <created>1754723300272</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1754723300272</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="这是一个基于 Python 和 Whisper 的音频处理工具，能够将多种格式的音频文件转换为文本，并可选择生成字幕文件。工具设计简洁易用，自动处理文件路径，用户只需选择输入文件即可完成转换操作" />
     <MESSAGE value="添加了license" />
     <MESSAGE value="添加了license,Remove audio_Output from git tracking" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了license,Remove audio_Output from git tracking" />
+    <MESSAGE value="添加了readme文件中的图片说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了readme文件中的图片说明" />
   </component>
 </project>

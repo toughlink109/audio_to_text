@@ -42,17 +42,41 @@ project/
 ├── audio_Input/    # 存放待转换的音频文件
 ├── audio_Output/   # 转换结果输出目录
 └── audio_to_text.py    # 主程序脚本
+└── testGpu.py          # 测试当前环境是否满足使用GPU运行whsiper
 ```
-## 安装要求
+## 依赖要求
 - Python ≥ 3.8
 - OpenAI Whisper
+- Pytorch 
 
 ## 安装依赖
    ```bash
     pip install -U openai-whisper
-    pip install torch --index-url https://download.pytorch.org/whl/cu118  //若已安装torch请忽略
+    pip install torch --index-url https://download.pytorch.org/whl/cu118  //此版本为标准torch 若Cpu英伟达建议安装可以调用Gpu的Torch
    ```
-### 创建目录（在脚本同级目录新建两个文件夹）
+
+### 支持`GPU`加速运行的Torch (**可选,非强制内容**，使用`CPU`不影响整体运行状态，只会降低整体处理速度)
+1. 运行`testGpu.py`查看当前机型是否安装可使用GPU加速及具体的GPU型号 
+    + 若检测结果为`True`并输出`GPU`型号可忽略本小结的内容。
+2. 卸载当前安装的`Torch`
+   ```bash
+   conda uninstall pytorch torchvision torchaudio
+   ```
+4. 在终端使用`nvidia-smi`查看你的`CUDA`版本
+    ```bash
+   nvidia-smi
+   
+   ```
+   <img src="img/nvidia-smi.png" style="zoom:80%;" />
+4. 前往 [PyTorch官网](https://pytorch.org/get-started/locally/),选择操作系统 （Windows）、包管理器 （Conda）、编程语言 （Python），以及 CUDA 版本。
+
+   <img src="img/PyTorch官网支持gpu的torch.png" style="zoom:67%;" />
+5. 使用官网给出本机状态下的支持`GPU`加速的`Torch`链接，并在终端进行安装，示例如下：
+```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia  //例,请结合网站给出的安装路径进行安装,不要拷贝粘贴本链接
+```
+---
+### 创建目录（在脚本同级目录新建两个文件夹即`audio_Input`与`audio_Output`）
 1. 将需要转换的音频文件放入 `audio_Input` 目录
 2. 输出的文本及字幕文件将在此显示
 3. 按照提示选择需要处理的音频文件
@@ -67,20 +91,31 @@ audio_Output    # 识别结果会输出到这里
    python audio_to_text.py
    ```
 
-## 图像说明
+## 测试运行效果
 ![](img/输入音频.png)
-<p align="center">输入音频截图</p>
+<p align="center">放入输入音频</p>
 
-<img src="img/音频处理过程.png" style="zoom: 67%;" />
+![](./img/GPU检测.png)
+
+<p align="center">检测GPU状态</p>
+
+
+
+<img src="img/音频处理过程2.png" style="zoom: 67%;" />
 
 <p align="center">音频处理过程</p>
 
+![](img/输出文件一览.png)
+
+<p align="center">输出文件一览</p>
+
 <img src="img/识别结果展示.png" style="zoom: 67%;" />
-<p align="center">识别结果展示</p>
 
+<p align="center">识别结果展示-中文</p>
 
+<img src="img/识别结果展示英文.png" style="zoom:65%;" />
 
-
+<p align="center">识别结果展示-英文</p>
 
 ## 输出说明
 
@@ -89,5 +124,5 @@ audio_Output    # 识别结果会输出到这里
 
 ## 注意事项
 
-- 处理文件的时长与文件大小及调用`Wisper`模型大小有关。
+- 处理文件的时长与文件大小、当前机型的`CPU`，`GPU`参数及调用`Wisper`模型大小有关。
 - 识别的`准确度`取决于音频质量和语言清晰度。
